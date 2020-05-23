@@ -8,10 +8,11 @@ function jinga(){
     // jQuery.support.cors = true;
     $.ajax({
         type: 'GET',
-        dataType: 'jsonp',
-        url: "https://cors-anywhere.herokuapp.com/superheroapi.com/api/2620686038220622/644",
+        dataType: 'json',
+        url: "https://cors-anywhere.herokuapp.com/superheroapi.com/api/2620686038220622/search/ironman",
         headers: { Origin:"localhost", },
-        success: function () {
+        success: function (cont) {
+            console.log(cont);
             console.log("hi");                
         },
         Error: function(){

@@ -1,4 +1,29 @@
 body{
+    /* padding-top: 4rem; */
     background-repeat: no-repeat;
     background-size: cover;
 }
+#header{
+    color:#fff;
+    text-shadow: 0 0 13px #000000 ,0 0 15px #0480d3;
+    border-radius: 0px;
+    background: url(images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-position: center; */
+}
+#header h1{
+    padding-top: 5rem;
+}
+#header p{
+    padding-bottom: 3rem;
+}
+.card-image-top{
+    height: 25rem;
+}
+/* div{
+    border: 1px red solid;
+    float: left;
+    width:30%;
+    height:50px;
+} */
