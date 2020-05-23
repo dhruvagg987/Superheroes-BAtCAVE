@@ -1,19 +1,15 @@
 
-// jQuery.ajaxPrefilter(function(options) {
-//     if (options.crossDomain && jQuery.support.cors) {
-//         options.url = 'https://cors-anywhere.herokuapp.com/' + options.url;
-//     }
-// });
 function jinga(){
-    // jQuery.support.cors = true;
+    var str=$("#srch").val();
     $.ajax({
         type: 'GET',
         dataType: 'json',
-        url: "https://cors-anywhere.herokuapp.com/superheroapi.com/api/2620686038220622/search/ironman",
+        url: "https://cors-anywhere.herokuapp.com/superheroapi.com/api/2620686038220622/search/"+str,
         headers: { Origin:"localhost", },
         success: function (cont) {
+            $("body").append(cont.results[0].id);
             console.log(cont);
-            console.log("hi");                
+            console.log("hi..its working");                
         },
         Error: function(){
             console.log("why");
@@ -22,7 +18,7 @@ function jinga(){
 });
 }
 
-document.getElementById("huh").addEventListener("click", jinga);
+document.getElementById("nice").addEventListener("click", jinga);
 
 
 
