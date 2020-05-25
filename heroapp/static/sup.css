@@ -1,15 +1,18 @@
 body{
-    /* padding-top: 4rem; */
+    /* background-image: url(/heroapp/static/images/b5.jpg) !important; */
+    padding-top: 4rem;
+    background-color: rgba(0, 0, 0, 0.295);
     background-repeat: no-repeat;
     background-size: cover;
 }
 #header{
     color:#fff;
-    text-shadow: 0 0 13px #000000 ,0 0 15px #0480d3;
+    text-shadow: 0 0 10px #000000 ,0 0 12px #0480d3;
     border-radius: 0px;
-    background: url(images/bg1.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background: none;
+    /* background: url(images/bg1.jpg); */
+    /* background-repeat: no-repeat; */
+    /* background-size: 100% 100%; */
     /* background-position: center; */
 }
 #header h1{
@@ -20,5 +23,15 @@ body{
 }
 .card-image-top{
     height: 22rem;
+ }
+ span{
+     padding-right: 2rem;
+ }
+ #nice{
+     color: seashell;
+     border-color: seashell;
+ }
+ .card{
+    background-color: rgba(246, 247, 248, 0.671);
  }
 
