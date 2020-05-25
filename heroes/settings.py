@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'livereload',
     'django.contrib.staticfiles',
     'corsheaders',
     'heroapp',
@@ -50,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'livereload.middleware.LiveReloadScript',
 ]
 
 ROOT_URLCONF = 'heroes.urls'
@@ -125,8 +127,11 @@ STATIC_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
 # CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_ALLOW_ALL = True
+
 CORS_ORIGIN_WHITELIST = ['https://cors-anywhere.herokuapp.com',
-'https://superheroapi.com',]
+'https://superheroapi.com',
+'http://127.0.0.1:80000',]
 
 CORS_ALLOW_HEADERS = [
     'localhost',
